@@ -1,0 +1,17 @@
+{
+  "name": "LinkedIn Connection Acceptor",
+  "manifest_version": 2,
+  "author": "Rupam Pakhira",
+  "description": "Accept All your Linkedin Connections with one button click!",
+  "version": "1.0",
+  "permissions": [
+      "activeTab",
+      "https://linkedin.com/*"
+  ],
+  "browser_action": {
+      "default_icon": {
+          "128": "logo.png"
+      },
+      "default_popup": "popup.html"
+  }
+}
