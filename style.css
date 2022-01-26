@@ -1,0 +1,47 @@
+html,
+body {
+    height: 200px;
+    background: rgb(29, 28, 29);
+}
+.wrap {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wrap .button {
+    min-width: 200px;
+    min-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: white;
+    background: #0c66c2;
+    background: linear-gradient(90deg, #0c66c2 0%, #0c66c2 100%);
+    border: none;
+    border-radius: 1000px;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+}
+.wrap .button:hover,
+.wrap .button:focus {
+    color: white;
+    transform: translateY(-6px);
+}
+.wrap .button::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
